@@ -1,0 +1,7 @@
+{
+  "/token/*": {
+    "target": "https://spoty-app-backend.herokuapp.com",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

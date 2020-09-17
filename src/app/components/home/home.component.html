@@ -1,1 +1,11 @@
-<p>home works!</p>
+<hr />
+<h4>Nuevos lansamientos</h4>
+<div class="container">
+  <div class="card-deck" *ngIf="newReleases">
+    <app-albums
+      [album]="releases"
+      *ngFor="let releases of newReleases.albums.items"
+      style="margin-bottom: 20px"
+    ></app-albums>
+  </div>
+</div>

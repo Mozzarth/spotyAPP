@@ -10,6 +10,9 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { AlbumsComponent } from './components/albums/albums.component';
+import { ArtistPildoraComponent } from './components/artist-pildora/artist-pildora.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,13 +20,17 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    AlbumsComponent,
+    ArtistPildoraComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(rutas)
+    RouterModule.forRoot(rutas),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
